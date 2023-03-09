@@ -1,0 +1,54 @@
+{
+  "name": "react-vite",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "vite",
+    "watch": "vite build --mode development --watch",
+    "build": "vite build --mode production && clientlib",
+    "build:local": "vite build",
+    "aemsync:pub": "aemsync -w ../.  -t  http://admin:admin@localhost:4503",
+    "lib": "clientlib",
+    "sync": "aemsync -w ../.",
+    "sync:pub": "aemsync -w ../. -t http://admin:admin@localhost:4503"
+  },
+  "dependencies": {
+    "@adobe/aem-core-components-react-base": "^1.1.8",
+    "@adobe/aem-core-components-react-spa": "^1.2.0",
+    "@adobe/aem-spa-component-mapping": "^1.1.1",
+    "@adobe/aem-spa-page-model-manager": "^1.3.11",
+    "concurrently": "^7.6.0",
+    "custom-event-polyfill": "^1.0.7",
+    "history": "^4.10.1",
+    "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.5",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "react-universal-component": "^4.5.0",
+    "sanitize-html": "^2.3.3"
+  },
+  "devDependencies": {
+    "@adobe/aem-react-editable-components": "^2.0.4",
+    "@aem-vite/vite-aem-plugin": "2.3.2",
+    "@babel/preset-react": "^7.18.6",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "aem-clientlib-generator": "1.8.0",
+    "aemsync": "^4.0.0",
+    "ajv": "^6.10.0",
+    "clone": "^2.1.2",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "sass": "^1.58.3",
+    "vite": "2.9.15",
+    "vite-plugin-babel": "^1.1.3"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 1%"
+  ],
+  "eslintConfig": {
+    "extends": "react-app"
+  }
+}

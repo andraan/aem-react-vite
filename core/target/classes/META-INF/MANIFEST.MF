@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Bundle-Category: React Vite
+Bundle-Description: Core bundle for React Vite
+Bundle-ManifestVersion: 2
+Bundle-Name: React Vite - Core
+Bundle-SymbolicName: react-vite.core
+Bundle-Version: 1.0.0.SNAPSHOT
+Export-Package: com.reactvite.core.filters;version="1.0";uses:="javax.
+ servlet",com.reactvite.core.listeners;version="1.0";uses:="org.apache
+ .sling.api.resource.observation",com.reactvite.core.models;version="1
+ .0";uses:="javax.annotation,org.apache.sling.api.resource,org.apache.
+ sling.models.annotations,org.apache.sling.models.annotations.injector
+ specific",com.reactvite.core.schedulers;version="1.0",com.reactvite.c
+ ore.servlets;version="1.0";uses:="javax.servlet,org.apache.sling.api,
+ org.apache.sling.api.servlets"
+Import-Package: javax.annotation;version="0.0.0",com.day.cq.wcm.api;ve
+ rsion="[1.27,2)",com.reactvite.core.filters;version="[1.0,2)",com.rea
+ ctvite.core.listeners;version="[1.0,2)",com.reactvite.core.schedulers
+ ;version="[1.0,2)",com.reactvite.core.servlets;version="[1.0,2)",java
+ x.servlet;version="[3.1,4)",org.apache.sling.api;version="[2.3,3)",or
+ g.apache.sling.api.request;version="[2.4,3)",org.apache.sling.api.res
+ ource;version="[2.11,3)",org.apache.sling.api.resource.observation;ve
+ rsion="[1.2,2)",org.apache.sling.api.servlets;version="[2.2,3)",org.a
+ pache.sling.models.annotations;version="[1.5,2)",org.apache.sling.mod
+ els.annotations.injectorspecific;version="[1.1,2)",org.slf4j;version=
+ "[1.7,2)"
+Provide-Capability: osgi.service;objectClass:List<String>="java.lang.R
+ unnable",osgi.service;objectClass:List<String>="javax.servlet.Filter"
+ ;uses:="javax.servlet",osgi.service;objectClass:List<String>="javax.s
+ ervlet.Servlet";uses:="javax.servlet",osgi.service;objectClass:List<S
+ tring>="org.apache.sling.api.resource.observation.ResourceChangeListe
+ ner";uses:="org.apache.sling.api.resource.observation"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compo
+ nent)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.e
+ e=JavaSE)(version=1.8))"
+Service-Component: OSGI-INF/com.reactvite.core.filters.LoggingFilter.x
+ ml,OSGI-INF/com.reactvite.core.listeners.SimpleResourceListener.xml,O
+ SGI-INF/com.reactvite.core.schedulers.SimpleScheduledTask.xml,OSGI-IN
+ F/com.reactvite.core.servlets.SimpleServlet.xml
+Sling-Model-Classes: com.reactvite.core.models.HelloWorldModel
+

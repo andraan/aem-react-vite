@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/react-vite" mode="merge"/>
+    <filter root="/content/react-vite" mode="merge"/>
+    <filter root="/content/dam/react-vite/asset.jpg" mode="merge"/>
+    <filter root="/content/experience-fragments/react-vite" mode="merge"/>
+</workspaceFilter>

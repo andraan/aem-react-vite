@@ -1,0 +1,10 @@
+{
+  "src/index.js": {
+    "file": "clientlib-base/js/app.a4ee86f5.js",
+    "src": "src/index.js",
+    "isEntry": true,
+    "css": [
+      "clientlib-base/css/styles.cc2fae45.css"
+    ]
+  }
+}

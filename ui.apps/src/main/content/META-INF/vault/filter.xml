@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/react-vite/clientlibs"/>
+    <filter root="/apps/react-vite/components"/>
+    <filter root="/apps/react-vite/i18n"/>
+</workspaceFilter>

@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: React Vite - UI content
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: content
+Content-Package-Id: com.reactvite:react-vite.ui.content:1.0.0-SNAPSHOT
+Content-Package-Description: UI content package for React Vite
+Content-Package-Dependencies: com.reactvite:react-vite.ui.apps:1.0.0-SNA
+ PSHOT
+Content-Package-Dependencies-Locations: com.reactvite:react-vite.ui.apps
+ :1.0.0-SNAPSHOT=maven:com.reactvite:react-vite.ui.apps:1.0.0-SNAPSHOT:z
+ ip
+Content-Package-Roots: /conf/react-vite,/content/dam/react-vite/asset.jp
+ g,/content/experience-fragments/react-vite,/content/react-vite
+

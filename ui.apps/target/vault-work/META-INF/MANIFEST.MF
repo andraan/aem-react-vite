@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: React Vite - UI apps
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: application
+Content-Package-Id: com.reactvite:react-vite.ui.apps:1.0.0-SNAPSHOT
+Content-Package-Description: UI apps package for React Vite
+Content-Package-Dependencies: adobe/cq60:core.wcm.components.content:2.1
+ 7.12,adobe/cq60:core.wcm.components.config:2.17.12
+Content-Package-Dependencies-Locations: adobe/cq60:core.wcm.components.c
+ ontent:2.17.12=maven:com.adobe.cq:core.wcm.components.content:2.17.12:z
+ ip,adobe/cq60:core.wcm.components.config:2.17.12=maven:com.adobe.cq:cor
+ e.wcm.components.config:2.17.12:zip
+Content-Package-Roots: /apps/react-vite/clientlibs,/apps/react-vite/comp
+ onents,/apps/react-vite/i18n
+Import-Package: com.adobe.aem.spa.project.core.models;version="[1.1.0,2.
+ 0.0)",com.reactvite.core.models;version="[1.0.0,2.0.0)",org.apache.slin
+ g.scripting.sightly;version="[2.0.0,3.0.0)"
+

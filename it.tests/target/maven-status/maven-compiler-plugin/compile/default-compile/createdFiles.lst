@@ -1,0 +1,4 @@
+com/reactvite/it/tests/HtmlUnitClient.class
+com/reactvite/it/tests/GetPageIT.class
+com/reactvite/it/tests/PublishPageValidationIT.class
+com/reactvite/it/tests/CreatePageIT.class

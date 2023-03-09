@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
+Build-Jdk-Spec: 11
+Implementation-Title: React Vite - UI config
+Implementation-Version: 1.0.0-SNAPSHOT
+Content-Package-Type: container
+Content-Package-Id: com.reactvite:react-vite.ui.config:1.0.0-SNAPSHOT
+Content-Package-Description: UI config package for React Vite
+Content-Package-Roots: /apps/react-vite/osgiconfig
+
