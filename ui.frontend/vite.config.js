@@ -6,13 +6,13 @@ import babel from "vite-plugin-babel";
 export default defineConfig(({ command, mode }) => ({
   base: command === "build" ? "/etc.clientlibs/react-vite/clientlibs/" : "/",
   publicDir: command === "build" ? false : "src/assets",
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        ".js": "jsx",
-      },
-    },
-  },
+  // optimizeDeps: {
+  //   esbuildOptions: {
+  //     loader: {
+  //       ".js": "jsx",
+  //     },
+  //   },
+  // },
   build: {
     brotliSize: false,
     minify: mode === "development" ? false : "esbuild",
@@ -36,21 +36,20 @@ export default defineConfig(({ command, mode }) => ({
         //   "etc.clientlibs/react-vite/clientlibs/clientlib-esmodule/resources/js/[name].[hash].js",
       },
       input: {
-        app: "src/index.js",
+        app: "src/index.jsx",
         styles: "src/index.css",
       },
     },
   },
   plugins: [
-    viteForAem({
-      contentPaths: ["/content/react-vite/us/en"],
-      publicPath: "/etc.clientlibs/react-vite/clientlibs/clientlib-base",
-    }),
     react(),
-    babel(),
+    // viteForAem({
+    //   contentPaths: ["/content/react-vite/us/en"],
+    //   publicPath: "/etc.clientlibs/react-vite/clientlibs/clientlib-base",
+    // }),
   ],
   server: {
-    port: 3000,
+    port: 7000,
     strictPort: true,
   },
 }));

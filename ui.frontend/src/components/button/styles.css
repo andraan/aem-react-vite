@@ -1,0 +1,22 @@
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.button-container__btn {
+  background-color: #0070d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform ease-out 100ms;
+  border-radius: 10px;;
+  box-shadow: 1px 2px 5px rgb(142, 142, 142)
+}
+
+.button-container__btn:hover {
+  transform: scale(1.05);
+  transition: transform ease-in 100ms;
+}

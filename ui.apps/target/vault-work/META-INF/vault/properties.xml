@@ -5,7 +5,7 @@
 <entry key="acHandling">merge_preserve</entry>
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="dependencies-locations">adobe/cq60:core.wcm.components.content:2.17.12=maven:com.adobe.cq:core.wcm.components.content:2.17.12:zip,adobe/cq60:core.wcm.components.config:2.17.12=maven:com.adobe.cq:core.wcm.components.config:2.17.12:zip</entry>
-<entry key="created">2023-03-09T02:35:56.353Z</entry>
+<entry key="created">2023-03-13T21:29:14.837Z</entry>
 <entry key="groupId">com.reactvite</entry>
 <entry key="description">UI apps package for React Vite</entry>
 <entry key="version">1.0.0-SNAPSHOT</entry>
