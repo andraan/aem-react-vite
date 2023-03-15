@@ -3,4 +3,4 @@ ui.frontend/node_modules
 ui.frontend/package-lock.json
 
 node_modules
-node_modules/
+node/
