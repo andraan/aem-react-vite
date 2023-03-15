@@ -5,7 +5,7 @@ const Button = () => {
   const [value, setValue] = useState(0);
   return (
     <div className="button-container">
-      <p>Handling state</p>
+      <p>Handling useState</p>
       <button
         className="button-container__btn"
         onClick={() => setValue((prev) => prev + 1)}

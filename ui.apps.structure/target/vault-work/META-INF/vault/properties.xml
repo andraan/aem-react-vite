@@ -4,7 +4,7 @@
 <comment>React Vite - Repository Structure Package</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2023-03-15T15:39:06.321Z</entry>
+<entry key="created">2023-03-15T16:01:55.620Z</entry>
 <entry key="groupId">com.reactvite</entry>
 <entry key="name">react-vite.ui.apps.structure</entry>
 <entry key="description">Empty package that defines the structure of the Adobe Experience Manager repository the Code packages in this project deploy into.

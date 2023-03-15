@@ -1,3 +1,3 @@
-it('renders without crashing', () => {
-  expect(1).toBe(1);
+it("Fake test scaffolding", () => {
+  expect(2 + 1).toBe(3);
 });

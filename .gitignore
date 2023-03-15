@@ -1,5 +1,7 @@
-ui.frontend/node_modules
+.idea/
+.vscode/
 
+ui.frontend/node_modules
 ui.frontend/package-lock.json
 
 node_modules
