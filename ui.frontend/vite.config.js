@@ -1,11 +1,10 @@
 import { defineConfig } from "vite";
 import { viteForAem } from "@aem-vite/vite-aem-plugin";
+import { bundlesImportRewriter } from "@aem-vite/import-rewriter";
 import react from "@vitejs/plugin-react";
-import babel from "vite-plugin-babel";
 
 export default defineConfig(({ command, mode }) => ({
-  base: command === "build" ? "/etc.clientlibs/react-vite/clientlibs/" : "/",
-  publicDir: command === "build" ? false : "src/assets",
+  // Enable load JS files instead of JSX
   // optimizeDeps: {
   //   esbuildOptions: {
   //     loader: {
@@ -13,43 +12,46 @@ export default defineConfig(({ command, mode }) => ({
   //     },
   //   },
   // },
+
+  base: command === "build" ? "/etc.clientlibs/react-vite/clientlibs/" : "/",
+  publicDir: command === "build" ? false : "public",
   build: {
     brotliSize: false,
-    minify: mode === "development" ? false : "esbuild",
-    outDir: "dist/clientlib-esmodule",
     manifest: true,
+    minify: mode === "development" ? false : "esbuild",
+    outDir: "dist",
     sourcemap: command === "serve" ? "inline" : false,
 
     rollupOptions: {
       output: {
         assetFileNames:
-          "clientlib-base/[ext]/[name].[hash][extname]",
-        chunkFileNames:
-          "clientlib-base/chunks/[name].[hash].js",
-        entryFileNames:
-          "clientlib-base/js/[name].[hash].js",
-        // assetFileNames:
-        //   "etc.clientlibs/react-vite/clientlibs/clientlib-esmodule/resources/[ext]/[name].[hash][extname]",
-        // chunkFileNames:
-        //   "etc.clientlibs/react-vite/clientlibs/clientlib-esmodule/resources/chunks/[name].[hash].js",
-        // entryFileNames:
-        //   "etc.clientlibs/react-vite/clientlibs/clientlib-esmodule/resources/js/[name].[hash].js",
+          "clientlib-react/resources/[ext]/[name].[hash][extname]",
+        chunkFileNames: "clientlib-react/resources/chunks/[name].[hash].js",
+        entryFileNames: "clientlib-react/resources/js/[name].[hash].js",
       },
       input: {
-        app: "src/index.jsx",
-        styles: "src/index.css",
+        bundle: "index.html",
       },
     },
   },
   plugins: [
     react(),
-    // viteForAem({
-    //   contentPaths: ["/content/react-vite/us/en"],
-    //   publicPath: "/etc.clientlibs/react-vite/clientlibs/clientlib-base",
-    // }),
+    viteForAem({
+      contentPaths: [
+        "/content/react-vite/us/en",
+        "/",
+        "./",
+        "/content/react-vite/us/en/home.html",
+      ],
+      publicPath: "/etc.clientlibs/react-vite/clientlibs/clientlib-react",
+    }),
+    bundlesImportRewriter({
+      publicPath: "/etc.clientlibs/react-vite/clientlibs/clientlib-react",
+      resourcesPath: "resources/js",
+    }),
   ],
   server: {
-    port: 7000,
+    port: 3000,
     strictPort: true,
   },
 }));

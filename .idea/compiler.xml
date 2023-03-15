@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="react-vite.all" />
+        <module name="react-vite.ui.config" />
+        <module name="react-vite.ui.apps.structure" />
+        <module name="react-vite.core" />
+        <module name="react-vite.ui.apps" />
+        <module name="react-vite.it.tests" />
+        <module name="react-vite.ui.tests" />
+        <module name="react-vite.ui.content" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="react-webpack.ui.tests" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

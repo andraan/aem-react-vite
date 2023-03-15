@@ -4,7 +4,7 @@
 <comment>React Vite - UI config</comment>
 <entry key="cloudManagerTarget">none</entry>
 <entry key="allowIndexDefinitions">false</entry>
-<entry key="created">2023-03-14T18:21:22.752Z</entry>
+<entry key="created">2023-03-15T15:39:11.569Z</entry>
 <entry key="groupId">com.reactvite</entry>
 <entry key="name">react-vite.ui.config</entry>
 <entry key="description">UI config package for React Vite</entry>

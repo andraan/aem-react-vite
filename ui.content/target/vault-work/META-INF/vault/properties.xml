@@ -5,7 +5,7 @@
 <entry key="allowIndexDefinitions">false</entry>
 <entry key="acHandling">merge</entry>
 <entry key="dependencies-locations">com.reactvite:react-vite.ui.apps:1.0.0-SNAPSHOT=maven:com.reactvite:react-vite.ui.apps:1.0.0-SNAPSHOT:zip</entry>
-<entry key="created">2023-03-14T18:21:23.073Z</entry>
+<entry key="created">2023-03-15T15:39:11.023Z</entry>
 <entry key="groupId">com.reactvite</entry>
 <entry key="description">UI content package for React Vite</entry>
 <entry key="version">1.0.0-SNAPSHOT</entry>

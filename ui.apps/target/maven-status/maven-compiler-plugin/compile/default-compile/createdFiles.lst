@@ -1,6 +1,7 @@
-org/apache/sling/scripting/sightly/apps/react__002d__vite/components/helloworld/helloworld__002e__html.class
+org/apache/sling/scripting/sightly/apps/react__002d__vite/clientlibs/clientlib__002d__react/resources/index__002e__html.class
 org/apache/sling/scripting/sightly/apps/react__002d__vite/components/xfpage/customfooterlibs__002e__html.class
 org/apache/sling/scripting/sightly/apps/react__002d__vite/components/page/customfooterlibs__002e__html.class
-org/apache/sling/scripting/sightly/apps/react__002d__vite/components/xfpage/body__002e__html.class
 org/apache/sling/scripting/sightly/apps/react__002d__vite/components/xfpage/customheaderlibs__002e__html.class
+org/apache/sling/scripting/sightly/apps/react__002d__vite/components/helloworld/helloworld__002e__html.class
+org/apache/sling/scripting/sightly/apps/react__002d__vite/components/xfpage/body__002e__html.class
 org/apache/sling/scripting/sightly/apps/react__002d__vite/components/page/customheaderlibs__002e__html.class

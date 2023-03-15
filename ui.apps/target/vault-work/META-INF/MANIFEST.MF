@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Created-By: Apache Jackrabbit FileVault - Package Maven Plugin 1.1.6
-Build-Jdk-Spec: 17
+Build-Jdk-Spec: 11
 Implementation-Title: React Vite - UI apps
 Implementation-Version: 1.0.0-SNAPSHOT
 Content-Package-Type: application
